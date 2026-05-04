@@ -1,61 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vent d'Ouest - Harmonie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1500&q=80');
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-        }
-    </style>
-</head>
-<body>
+{% extends 'website/base.html' %}
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">VENT D'OUEST</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" href="#">Accueil</a>
-                <a class="nav-link" href="#">L'Orchestre</a>
-                <a class="nav-link" href="#">Agenda</a>
-            </div>
-        </div>
-    </nav>
-
+{% block content %}
     <header class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold">L'Harmonie Vent d'Ouest</h1>
-            <p class="lead">Le souffle musical du grand ouest.</p>
-            <a href="#" class="btn btn-primary btn-lg mt-3">Prochains Concerts</a>
-        </div>
-    </header>
-
-    <main class="container my-5 text-center">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Musique</h3>
-                <p>Un répertoire varié allant du classique aux musiques de films.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Passion</h3>
-                <p>Une équipe de musiciens passionnés et bénévoles.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Partage</h3>
-                <p>Nous nous produisons partout dans la région pour votre plaisir.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-light py-4 text-center">
-        <p>&copy; 2024 Vent d'Ouest - Musique & Passion</p>
-    </footer>
-
-</body>
-</html>
+        </header>
+    <main class="container my-5">
+        </main>
+{% endblock %}
